@@ -1,0 +1,173 @@
+﻿/*
+z-index:0  div.unit,div.margin-unit
+z-index:1  div.person 
+z-index:2  div.transparent-panel 
+z-index:3  div.person-info,div.round-message
+z-index:10 div.listen-click-panel
+
+游戏消息Div的z-index大于等于100
+z-index:100 div.listen-click-panel
+z-index:101 div.round-message,div.hp-info
+*/
+
+
+body{
+    margin:0px 0px 0px 0px;
+    font-family:微软雅黑;/*Linux font*/
+}
+
+div.listen-click-panel{
+    position:absolute;
+    z-index:10;
+}
+
+div.unit{
+    position:absolute;
+    background-size:100% 100%;
+    width:98px;
+    height:98px;
+    border-style:solid;
+    text-align:center;
+    border-width:1px 1px 1px 1px;
+    z-index:0;
+}
+
+div.margin-unit{
+    position:absolute;
+    background-size:100% 100%;
+    background-color:black;
+    width:100px;
+    height:100px;
+    z-index:0;
+}
+
+div.person{
+    position:absolute;
+    background-size:100% 100%;
+    width:100px;
+    height:100px;
+    z-index:1;
+}
+
+div.person-info{
+    position:absolute;
+    width:500px;
+    height:500px;
+    color:white;
+    background-color:rgb(71, 164, 71);
+    z-index:3;
+}
+
+div.person-avatar{
+    position:absolute;
+    background-size:100% 100%;
+    left:0px;
+    top:0px;
+    width:197px;
+    height:197px;
+    border-style:solid;
+    border-color:white;
+    border-width:2px 1px 1px 2px;
+}
+
+div.person-name{
+    position:absolute;
+    font-size:70px;
+    line-height:97px;
+    text-align:center;
+    border-style:solid;
+    border-color:white;
+    border-width:2px 2px 1px 1px;
+    left:200px;
+    top:0px;
+    width:297px;
+    height:97px;
+}
+
+div.person-attr{
+    position:absolute;
+    left:0px;
+    top:200px;
+    width:197px;
+    height:297px;
+    border-style:solid;
+    border-color:white;
+    border-width:1px 1px 2px 2px;
+}
+
+div.person-attr p{
+    text-indent:20px;
+}
+
+div.person-equipments{
+    position:absolute;
+    left:200px;
+    top:100px;
+    width:297px;
+    height:98px;
+    border-style:solid;
+    border-color:white;
+    border-width:1px 2px 1px 1px;
+}
+
+div.person-equipments div.equipment-item{
+    height:50px;
+}
+
+div.person-goods{
+    position:absolute;
+    left:200px;
+    top:200px;
+    width:297px;
+    height:297px;
+    border-style:solid;
+    border-color:white;
+    border-width:1px 2px 2px 1px;
+}
+
+div.person-goods div.goods-item{
+    height:50px;
+}
+
+div.item-name{
+    line-height:50px;
+    padding-left:20px;
+    float:left;
+}
+
+div.item-statement{
+    line-height:50px;
+    padding-right:20px;
+    float:right;
+}
+
+.transparent-panel{
+    position:absolute;
+    z-index:2;
+}
+
+div.round-message-base-panel{
+    position:absolute;
+    z-index:100;
+}
+
+div.round-message{
+    position:absolute;
+    display:none;
+    width:600px;
+    height:300px;
+    font-size:120px;
+    text-align:center;
+    line-height:300px;
+    z-index:101;
+}
+
+div.hp-info{
+    position:absolute;
+    width:200px;
+    height:100px;
+    background-color:black;
+    text-align:center;
+    color:white;
+    z-index:101;
+}
